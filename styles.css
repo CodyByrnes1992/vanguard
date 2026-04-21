@@ -1,7 +1,8 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Cody Byrnes */
 
 /* IMPORTED FONTS*/
-/* IMPORT "INTER" FROM GOOGLE FONTS"
+/* IMPORT "INTER" FROM GOOGLE FONTS"*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -60,6 +61,46 @@ table {
     --black: #000000;
     --charcoal: #333333;
     --font: "Inter", sans-serif;
+}
+
+label span{
+    background-color: var(--white);
+    display: block;
+    height: .25rem;
+    position: relative;
+    transition: background-color .3s ease-out;
+    width: 2rem;
+}
+label span:before, label span:after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before{
+    top: .75rem;
+}
+label span:after{
+    top: -.75rem;
+}
+input:checked ~ ul{
+    max-height: 500px;
+}
+input:checked ~ label span{
+    background: transparent;
+}
+input:checked ~ label span:before{
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after{
+    transform: rotate(45deg);
+}
+
+header{
+    background-color: var(--charcoal);
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
