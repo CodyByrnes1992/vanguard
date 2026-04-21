@@ -189,7 +189,8 @@ header{
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
-
+@media (mid-width: 600px) {
+    
     #results {
         grid-template-columns: 1fr 1fr;
     }
@@ -203,6 +204,9 @@ header{
     .bar-chart {
         width: 50%;
     }
-
+}
 
 /* MEDIA QUERIES (LARGE) */
+@media (mid-width: 900px){
+
+}
