@@ -127,11 +127,28 @@ input:checked ~ label span:after{
     padding: 1rem;
     overflow: hidden;
 }
-
+h1{
+    font-size: 32px;
+    color: var(--blue);
+    font-weight: bold;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 20px;
+}
+#About h2{
+    color: var(--white);
+    font-weight: bold;
+}
+#About p{
+    color: var(--white);
+}
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  header{
     content: "";
-
+    
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
