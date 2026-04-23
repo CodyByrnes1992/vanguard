@@ -224,6 +224,8 @@ section{
     width: auto;
     text-align: center;
 }
+
+
 /* ADD ON TRANSITION ON HEIGHT */
 .bar {
     width: 50px;
@@ -260,7 +262,23 @@ section{
 #Contact{
     background-color: var(--black);
     color: var(--white);
+    width: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
+#Contact p{
+    padding: 10px;
+}
+#Contact label {
+    padding: 10px;
+}
+
+#Contact input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
 footer{
     background-color: var(--black);
     color: var(--white);
