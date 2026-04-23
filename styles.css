@@ -230,7 +230,7 @@ section{
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 15s;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -266,7 +266,7 @@ footer{
     color: var(--white);
 }
 /* MEDIA QUERIES (MEDIUM) */ 
-@media (mid-width: 600px) {
+@media (min-width: 600px) {
     
     #results {
         grid-template-columns: 1fr 1fr;
@@ -287,7 +287,7 @@ footer{
 }
 
 /* MEDIA QUERIES (LARGE) */
-@media (mid-width: 900px){
+@media (min-width: 900px){
     body{
         max-width: 900px;
     }
