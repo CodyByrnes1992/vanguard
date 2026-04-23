@@ -257,7 +257,14 @@ section{
     animation: stepUp 1s ease-in-out forwards;
 }
 
-
+#Contact{
+    background-color: var(--black);
+    color: var(--white);
+}
+footer{
+    background-color: var(--black);
+    color: var(--white);
+}
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (mid-width: 600px) {
     
