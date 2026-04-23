@@ -223,6 +223,7 @@ section{
     font-size: 15px;
     width: auto;
     text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -266,6 +267,7 @@ section{
     text-align: left;
     display: flex;
     flex-direction: column;
+    
 }
 #Contact p{
     padding: 10px;
@@ -276,12 +278,19 @@ section{
 
 #Contact input {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 270px;
 }
 
 footer{
     background-color: var(--black);
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+small{
+    padding-top: 10px;
 }
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 600px) {
