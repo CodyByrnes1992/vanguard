@@ -100,14 +100,11 @@ input:checked ~ label span:after{
     transform: rotate(45deg);
 }
 
-header{
-   
-}
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
-@media all and (min-width: 400px){
+@media (min-width: 400px){
     body{
         min-width: 400px;
     }
@@ -153,6 +150,28 @@ header{
     max-width: 800px;
     padding: 1rem;
     position: relative;
+}
+#request{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    width: auto;
+    text-align: center;
+}
+#submit{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    width: auto;
+    text-align: center;
 }
 /* ADD ON TRANSITION ON HEIGHT */
 .bar {
@@ -204,9 +223,14 @@ header{
     .bar-chart {
         width: 50%;
     }
+    body{
+        max-width: 600px;
+    }
 }
 
 /* MEDIA QUERIES (LARGE) */
 @media (mid-width: 900px){
-
+    body{
+        max-width: 900px;
+    }
 }
