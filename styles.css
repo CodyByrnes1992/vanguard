@@ -205,7 +205,14 @@ header{
 nav a{
     text-decoration: none;
     color: var(--blue);
+    transition: color .5s ease-in;
+        
 }
+nav a:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
 .results-container{
     background-color: var(--blue);
     color: var(--white);
@@ -375,6 +382,7 @@ small{
         padding-bottom: 40px;
         padding-right: 20px;
     }
+    
 }
 
 /* MEDIA QUERIES (LARGE) */
