@@ -107,7 +107,7 @@ input:checked ~ label span:after{
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 @media (min-width: 400px){
     body{
-        min-width: 400px;
+        max-width: 400px;
     }
 }
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
@@ -137,13 +137,14 @@ h2{
     font-size: 24px;
     font-weight: bold;
     padding: 20px;
+    text-align: left;
 }
 h3{
     font-size: 20px;
     padding-top: 20px;
 }
 p{
-    font-weight: bold;
+    
 }
 #About h2{
     color: var(--white);
@@ -163,7 +164,7 @@ section{
     margin-bottom: 10px;
 }
 #Services p{
-    font-weight: bold;
+    
     text-align: left;
     padding: 10px;
     line-height: 1.5;
