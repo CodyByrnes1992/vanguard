@@ -185,7 +185,7 @@ section{
     color: var(--white);
 }
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- header{
+ {
     content: "";
     
     left:-.5rem;
@@ -193,6 +193,18 @@ section{
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
     background-color: var(--black);
+}
+header{
+    background-color: var(--black);
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 3px solid var(--blue);
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--blue);
 }
 .results-container{
     background-color: var(--blue);
@@ -231,7 +243,7 @@ section{
 }
 #request:hover{
     background-color: var(--red);
-    transform: scale(1.2);
+    transform: scale(1.2, 1.2);
 }
 #Contact #submit{
     background-color: var(--blue);
@@ -354,6 +366,14 @@ small{
     }
     body{
         max-width: 600px;
+    }
+    nav ul {
+    
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+        padding-right: 20px;
     }
 }
 
