@@ -221,6 +221,11 @@ section{
     font-size: 15px;
     width: auto;
     text-align: center;
+    transition: transform .3s;
+}
+#request:hover{
+    background-color: var(--red);
+    transform: scale(1.2);
 }
 #Contact #submit{
     background-color: var(--blue);
@@ -234,6 +239,7 @@ section{
     text-align: center;
     margin-top: 20px;
 }
+
 table, th, td{
     border: 1px solid var(--charcoal);
     padding: 20px;
@@ -333,7 +339,7 @@ small{
     .results-table {
         width: 50%;
     }
-    .bar-chart {
+    #bar-chart {
         width: 50%;
     }
     body{
