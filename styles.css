@@ -158,6 +158,10 @@ p{
 #About p{
     color: var(--white);
 }
+#Services ul{
+    display: grid;
+    grid-template-columns: auto;
+}
 #Services section{
     background-color: var(--blue);
     padding: 20px;
@@ -383,9 +387,9 @@ small{
         padding-right: 20px;
     }
 
-    #Services {
+    #Services ul{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: minmax(370px, 1fr) minmax(370px, 1fr);
         gap: 10px;
     }
     
