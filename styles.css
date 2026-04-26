@@ -38,6 +38,7 @@ body {
     line-height: 1;
     font-family: var(--font);
     text-align: center;
+    background-color: var(--white);
 }
 ol, ul {
     list-style: none;
@@ -175,7 +176,6 @@ p{
 section{
     padding: 20px;
     margin-bottom: 10px;
-    
 }
 #Services p{
     
@@ -221,6 +221,7 @@ nav a:hover {
     background-color: var(--blue);
     color: var(--white);
     padding-bottom: 15px;
+    width: 100%;
 }
 .results-container h2{
     font-weight: bold;
@@ -330,7 +331,7 @@ table{
     text-align: left;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     justify-content: center;
 }
 #Contact p{
@@ -364,6 +365,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 small{
     padding-top: 10px;
@@ -372,7 +374,9 @@ small{
 @media (min-width: 600px) {
     
     #results {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
     .results-container {
         flex-direction: row;
