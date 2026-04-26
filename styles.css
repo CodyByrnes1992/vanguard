@@ -382,6 +382,12 @@ small{
         padding-bottom: 40px;
         padding-right: 20px;
     }
+
+    #Services {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
     
 }
 
