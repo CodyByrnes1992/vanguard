@@ -222,9 +222,12 @@ nav a:hover {
     color: var(--white);
     padding-bottom: 15px;
 }
-.results-container h3{
+.results-container h2{
     font-weight: bold;
     padding-bottom: 20px;
+}
+.results-container p{
+    margin-left: 20px;
 }
 .results-table{
     display: flex;
