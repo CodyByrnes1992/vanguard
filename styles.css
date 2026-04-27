@@ -134,7 +134,7 @@ h1{
     color: var(--blue);
     font-weight: bold;
     text-align: left;
-
+    height: 1px;
 }
 h2{
     font-size: 24px;
@@ -204,21 +204,82 @@ header{
     background-color: var(--black);
     width: 90%;
     margin: 0 auto;
-    border-bottom: 3px solid var(--blue);
-    
+    padding-bottom: 20px;
 }
 
-nav a{
+
+nav ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+nav li a{
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 40px;
     text-decoration: none;
+    font-weight: bold;
     color: var(--blue);
-    transition: color .5s ease-in;
-        
+    
+    transition: background-color .3s ease-in;
 }
 nav a:hover {
     background-color: var(--blue);
     color: var(--black);
 }
-
+nav label{
+    display: inline-block;
+    padding: 20px;
+    user-select: none;
+   margin-left: 90px;
+}
+label span{
+    background-color: var(--white);
+    display: block;
+    height: .25rem;
+    position: relative;
+    transition: background-color .3s ease-out;
+    
+}
+label span:before, label span:after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before{
+    top: .75rem;
+}
+label span:after{
+    top: -75rem;
+}
+nav input {
+    display: none;
+}
+input:checked ~ ul{
+    max-height: 500px;
+}
+nav input:checked ~ label span{
+    background: transparent;
+}
+nav input:checked ~ label span:before{
+    transform: rotate(-45deg);
+}
+nav input:checked ~ label span:after{
+    transform: rotate(45deg);
+}
+nav input:checked ~ label:not(.steps) span:before, input:checked ~
+label:not(.steps) span:after{
+    top: 0;
+}
 .results-container{
     background-color: var(--blue);
     color: var(--white);
@@ -374,7 +435,18 @@ small{
 }
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 600px) {
-    
+    nav ul {
+        visibility: visible;
+        overflow: visible;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+        padding-right: 20px;
+    }
+    label span{
+        visibility: hidden;
+    }
     #results {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -393,15 +465,7 @@ small{
     body{
         max-width: 600px;
     }
-    nav ul {
     
-        display: flex;
-        gap: 10px;
-        justify-content: flex-end;
-        padding-bottom: 40px;
-        padding-right: 20px;
-    }
-
     #Services ul{
         display: grid;
         grid-template-columns: minmax(370px, 1fr) minmax(370px, 1fr);
@@ -415,4 +479,5 @@ small{
     body{
         max-width: 900px;
     }
+    
 }
