@@ -133,6 +133,8 @@ h1{
     font-size: 32px;
     color: var(--blue);
     font-weight: bold;
+    text-align: left;
+
 }
 h2{
     font-size: 24px;
@@ -189,7 +191,7 @@ section{
     color: var(--white);
 }
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
+ img{
     content: "";
     
     left:-.5rem;
