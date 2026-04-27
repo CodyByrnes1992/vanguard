@@ -107,9 +107,7 @@ input:checked ~ label span:after{
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 @media (min-width: 400px){
-    body{
-        max-width: 400px;
-    }
+    
 }
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -225,7 +223,8 @@ nav li a{
     text-decoration: none;
     font-weight: bold;
     color: var(--blue);
-    
+    text-align: right;
+    margin-right: 20px;
     transition: background-color .3s ease-in;
 }
 nav a:hover {
@@ -236,7 +235,7 @@ nav label{
     display: inline-block;
     padding: 20px;
     user-select: none;
-   margin-left: 90px;
+   margin-left: 200px;
 }
 label span{
     background-color: var(--white);
@@ -434,7 +433,7 @@ small{
     padding-top: 10px;
 }
 /* MEDIA QUERIES (MEDIUM) */ 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     nav ul {
         visibility: visible;
         overflow: visible;
@@ -463,21 +462,23 @@ small{
         width: 50%;
     }
     body{
-        max-width: 600px;
+        min-width: 800px;
     }
-    
+    #Services {
+        margin-right: 60px;
+    }
     #Services ul{
         display: grid;
         grid-template-columns: minmax(370px, 1fr) minmax(370px, 1fr);
         gap: 10px;
     }
-    
+
 }
 
 /* MEDIA QUERIES (LARGE) */
-@media (min-width: 900px){
+@media (min-width: 1024px){
     body{
-        max-width: 900px;
+        min-width: 1024px;
     }
     
 }
