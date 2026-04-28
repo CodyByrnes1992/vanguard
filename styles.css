@@ -446,15 +446,19 @@ small{
     label span{
         visibility: hidden;
     }
+    
+    .results-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    }
+
     #results {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
+        
     }
-    .results-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    
     .results-table {
         width: 50%;
     }
