@@ -404,6 +404,7 @@ table{
 }
 #results{
     background-color: var(--blue);
+    color: var(--white);
 }
 
 input[type=text]{
