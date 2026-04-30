@@ -451,12 +451,12 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            width: auto;
     }
 
     #results {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
     }
     
     .results-table {
@@ -470,11 +470,6 @@ footer{
     }
     #Services {
         margin-right: 60px;
-    }
-    #Services ul{
-        display: grid;
-        grid-template-columns: minmax(370px, 1fr) minmax(370px, 1fr);
-        gap: 10px;
     }
 
 }
