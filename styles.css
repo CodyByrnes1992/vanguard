@@ -455,7 +455,10 @@ footer{
     label span{
         visibility: hidden;
     }
-    
+    .results-container{
+        display: flex;
+    }
+    /*
     .results-container {
             display: flex;
             flex-direction: row;
@@ -466,7 +469,7 @@ footer{
     #results {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
+    }*/
     
     .results-table {
         width: 50%;
