@@ -17,7 +17,7 @@
 <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
         <header>
             <div class="container">
-                <h1><img src="images/vanguard-logo.svg" alt="vanguard-logo">Vanguard</h1>
+                <h1>Vanguard</h1>
                 <nav>
                     <input type="checkbox" id="menu">
                     <label for="menu"><span></span></label>
@@ -31,29 +31,34 @@
         </header>
             
         <main>
-            <div class="container">
-                <section id="About">
+            <section id="About">
+                <div class="container">
+                
                     <h2>Innovation & Investment</h2>
                     <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
-                    <input type="submit" id="request" value="Request a Consultation">
-            
-                </section>
-            </div>
+                   <!-- <input type="submit" id="request" value="Request a Consultation">-->
+                    <a href="#request">Request a Consultation</a>
+                </div>
+            </section>
+                
+            <section>
                 <div class="container">
-                    <section>
+                    
                         <h2>Our Expertise. Your Edge.</h2>
                         <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. 
                             Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.</p>
-                    </section>
                 </div>
+            </section>
+                
                     
                 
                     <section id="Services">
-                            <h3>What We Offer</h3>
+                            <h2>What We Offer</h2>
                             <section>
                                 <h3>Strategic Growth Consulting</h3>
                                 <p>Unlock new revenue streams and optimize market expansion strategies.</p>
                             </section>
+                        
                             <section>
                                 <h3>High-Impact Investment Solutions</h3>
                                 <p>Maximize returns with data-driven portfolio management.</p>
@@ -78,21 +83,19 @@
                     </section>
                 
              
-                <div id="results">
+                
+                    <section>
                         <div class="container">
-                            <section>
                                 <h3>Proven Results</h3>
                                 <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
-                        
-                            </section>
                         </div>
-                    
-                            <div class="container">
-                        <div class="results-container">
-                                <section>
-                                    <h3>Profits</h3>
-                                </section>
-                            </div>
+                    </section>
+                    <section>
+                        <div class="container">
+                            <h3>Profits</h3>
+                        </div>
+                    </section>
+                           
                             <div class="results-table">
                                 <table>
                                     <thead>
@@ -131,40 +134,43 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <h3>Growth</h3>
-                                <div id="bar-chart">
-                                    <div class="bar" data-year="2020" style="--height: 30%;"></div>
-                                    <div class="bar" data-year="2021" style="--height: 50%;"></div>
-                                    <div class="bar" data-year="2022" style="--height: 70%;"></div>
-                                    <div class="bar" data-year="2023" style="--height: 85%;"></div>
-                                    <div class="bar" data-year="2024" style="--height: 100%;"></div>
-                                </div>
-                        </div>
-                </div>
+                            <section>
+                                <h3>Growth</h3>
+                                    <div id="bar-chart">
+                                        <div class="bar" data-year="2020" style="--height: 30%;"></div>
+                                        <div class="bar" data-year="2021" style="--height: 50%;"></div>
+                                        <div class="bar" data-year="2022" style="--height: 70%;"></div>
+                                        <div class="bar" data-year="2023" style="--height: 85%;"></div>
+                                        <div class="bar" data-year="2024" style="--height: 100%;"></div>
+                                    </div>
+                            </section>
+                
     
                         <section id="Contact">
-                                <div class="container">
+                            <div class="container">
                                 <h2>Contact Us</h2>
-                                <p>Want to take your business to the next level? Get in touch with our elite team today.</p></div>
+                                <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
                                 <form>
-                                <label for="fname">Full Name</label>
-                                <input type="text" id="fname" name="fname"> 
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email">
-                                <label for="cname">Company Name</label>
-                                <input type="text" id="cname" name="cname">
-                                <label for="industry">Industry</label>
-                                <input type="text" id="industry" name="industry">
-                                <label for="areatext">How can we help you?</label>
-                                <textarea id="areatext" rows="5" cols="50"></textarea>
-                                <button type="submit" id="submit" value="Submit">Submit</button>
-                            </form>
+                                    <label for="fname">Full Name</label>
+                                    <input type="text" id="fname" name="fname"> 
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email">
+                                    <label for="cname">Company Name</label>
+                                    <input type="text" id="cname" name="cname">
+                                    <label for="industry">Industry</label>
+                                    <input type="text" id="industry" name="industry">
+                                    <label for="areatext">How can we help you?</label>
+                                    <textarea id="areatext" rows="5" cols="50"></textarea>
+                                    <button type="submit" id="submit" value="Submit">Submit</button>
+                                </form>
+                           </div>
                         </section>
         </main>
                     <footer>
                         <small>For educational purposes only.</small> 
-                        <address>Email: <a href="mailto:info@vaanguard.com">info@vaanguard.com</a></address><br>
-                        <address>Phone: 480.123.4567</address>
+                        <address>Email: <a href="mailto:info@vaanguard.com">info@vaanguard.com</a>
+                        <br>
+                        Phone: 480.123.4567</address>
                     </footer>
     </body>
 </html>
