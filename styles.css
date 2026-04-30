@@ -191,13 +191,15 @@ section{
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  img{
     content: "";
-    
+    transition: height 4s ease-in;
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
     background-color: var(--black);
+    animation: stepUp 4s infinite;
 }
+
 header{
     background-color: var(--black);
     width: 90%;
@@ -374,6 +376,7 @@ tbody tr:nth-child(even){
     font-weight: bold;
     color: var(--white);
 }
+
 @keyframes stepUp {
     0% {
         height: 0;
