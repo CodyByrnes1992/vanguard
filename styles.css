@@ -351,6 +351,9 @@ table{
     padding: 20px;
     
 }
+tbody tr:nth-child(even){
+    background-color: var(--charcoal);
+}
 /* ADD ON TRANSITION ON HEIGHT */
 .bar {
     width: 50px;
