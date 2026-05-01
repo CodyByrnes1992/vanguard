@@ -55,7 +55,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+/* GLOBAL STYLES*/
 /* ROOT VARIABLES */
 :root {
     --blue: #007BFF;
@@ -103,9 +103,6 @@ input:checked ~ label span:after{
 }
 
 
-/* GLOBAL STYLES (MOBILE FIRST (SMALL) */
-
-/* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
