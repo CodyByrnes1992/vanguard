@@ -131,6 +131,7 @@ h1{
     font-weight: bold;
     text-align: left;
     height: 1px;
+    margin-left: 30px;
 }
 h2{
     font-size: 24px;
@@ -156,9 +157,12 @@ p{
 }
 #About p{
     color: var(--white);
+    padding-bottom: 20px;
 }
 
-
+#About a{
+    padding: 20px;
+}
 #Services ul{
     display: grid;
     grid-template-columns: auto;
@@ -203,6 +207,8 @@ header{
     background-color: var(--black);
     width: 100%;
     padding-bottom: 20px;
+    border: 1px solid var(--blue);
+
 }
 
 
@@ -454,8 +460,12 @@ footer{
     label span{
         visibility: hidden;
     }
-    .results-container{
+   #About p{
+        padding-bottom: 30px;
+   }
+    .results-container {
         display: flex;
+        flex-direction: column;
     }
     /*
     .results-container {
@@ -464,7 +474,7 @@ footer{
             justify-content: space-between;
             width: auto;
     }
-
+    
     #results {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -481,6 +491,13 @@ footer{
     }
     #Services {
         margin-right: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    #results section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
         input[type=text] {
             
@@ -500,5 +517,9 @@ footer{
     body{
         min-width: 1024px;
     }
-    
+    form input{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
 }
