@@ -142,7 +142,7 @@ h2{
 }
 
 h3{
-    font-size: 16px;
+    font-size: 20px;
     padding-top: 20px;
     text-align: left;
     margin-left: 10px;
@@ -298,10 +298,7 @@ label:not(.steps) span:after{
 .results-container p{
     margin-left: 20px;
 }
-.results-table{
-    display: flex;
-    justify-content: center;
-}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -434,6 +431,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 textarea{
     width: 290px;
@@ -445,6 +443,7 @@ footer{
     flex-direction: column;
     padding-bottom: 20px;
     padding-top: 20px;
+    
 }
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
@@ -465,20 +464,10 @@ footer{
    }
     .results-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
     }
-    /*
-    .results-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: auto;
-    }
-    
-    #results {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }*/
     
     .results-table {
         width: 50%;
@@ -495,10 +484,7 @@ footer{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-    #results section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+    
         input[type=text] {
             
             width: 80%;
@@ -517,9 +503,8 @@ footer{
     body{
         min-width: 1024px;
     }
-    form input{
+    #Services{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-       
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
